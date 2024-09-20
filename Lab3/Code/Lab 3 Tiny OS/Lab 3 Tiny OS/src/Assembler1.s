@@ -11,14 +11,14 @@
 .equ	PORTB,0x05					// Port B Output Register
 .equ	PORTD,0x0B					// Port D Output Register
 .equ	U2X0,1						// Double Transmission Speed bit in UCSR0A register
-.equ	UBRR0L,0xC4					// USART Baud Rate Register (Low) 11000100
-.equ	UBRR0H,0xC5					// USART Baud Rate Register (High) 11000101
-.equ	UCSR0A,0xC0					// USART Control and Status Register A 11000000
-.equ	UCSR0B,0xC1					// USART Control and Status Register B 11000001
-.equ	UCSR0C,0xC2					// USART Control and Status Register C 11000010
+.equ	UBRR0L,0xC4					// USART Baud Rate Register (Low) 
+.equ	UBRR0H,0xC5					// USART Baud Rate Register (High) 
+.equ	UCSR0A,0xC0					// USART Control and Status Register A 
+.equ	UCSR0B,0xC1					// USART Control and Status Register B 
+.equ	UCSR0C,0xC2					// USART Control and Status Register C 
 .equ	UDR0,0xC6					// USART I/O Data Register 11000110
-.equ	RXC0,0x07					// USART Receive Complete Flag bit in UCSR0A register 00000111
-.equ	UDRE0,0x05					// USART Data Register Empty Flag bit in UCSR0A register 00000101
+.equ	RXC0,0x07					// USART Receive Complete Flag bit in UCSR0A register 
+.equ	UDRE0,0x05					// USART Data Register Empty Flag bit in UCSR0A register 
 .equ	ADCSRA,0x7A					// ADC Control and Status Register A
 .equ	ADMUX,0x7C					// ADC Multiplexer Selection Register
 .equ	ADCSRB,0x7B					// ADC Control and Status Register B
@@ -45,7 +45,7 @@
 
 .set	temp,0				// 
 
-.section ".text"			// Declare this is for 
+.section ".text"			// Declare this is for code
 .global Mega328P_Init
 Mega328P_Init:
 		//***********************************************
